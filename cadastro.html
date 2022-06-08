@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="Stely1.css">
+    <script src="javascript.js"></script>
+       
+    <title>CADASTRO</title>
+</head>
+<body onload="mostraValor()" id="wallpaper">
+    <div class="container-fluid">
+        <div class="h1cor h1cor2" id="timer" style="margin-left: 1320px;"></div>
+        <div class="row justify-content-end">
+            <header>
+                <div class="col-8 offset-2 text-end">
+                    <p id="p" style="color: rgb(255, 255, 255);">Bem-vindo, </p>
+                    <div class="col-5 offset-3">
+                        <h1 style=" text-align: center;">
+                            <a href="pagina2.html" class="h1cor2">Pedrinho Locações</a>
+                        </h1>
+                    </div>
+                    <!-- <nav style="width: 293px; height: 35px; margin-top: 10px; margin-left: 648px;"> -->
+                    <div>
+                        <a href="sobrenos.html">
+                            <button type="button" class="btn btn-dark offset-4" style="width:150px ;">FALE
+                                CONOSCO</button>
+                        </a>
+                        <a href="carrinho.html">
+                        <button type="button" class="btn btn-dark" style="width: 120px;">CARRINHO</button>
+                        </a>
+                        <!-- <a href="cadastro.html">
+                            <button type="button" class="btn btn-dark" style="width: 120px;">CADASTRO</button>
+                        </a> -->
+
+                        <!-- <a href="sobrenos.html"><button class="botoesheader">SOBRE NÓS</button></a>
+                            <a href="carrinho.html"><button class="botoesheader">CARRINHO</button></a>
+                                <a href="cadastro.html"><button class="botoesheader" href="">CADASTRO</button></a> -->
+                    </div>
+                    <!-- </nav> -->
+                </div>
+        </div>
+
+        </header>
+
+    <div class="col-8 offset-2 bg-dark mt-2 card " >
+        <div class="container">
+            <h1 class="h1cor" style="text-align: center;">Consultando CEP</h1>
+           
+                <div class="row">
+
+                        <label for="cep" class="h1cor">CEP</label>
+                        <input type="text" class="col-8 m-2 card" style="width:910px ;" id="cep" >
+                            <small class="font-monospace h1cor" >00000-000</small>
+
+                        <label class="mt-2 h1cor" for="logradouro">Logradouro</label>            
+                        <input type="text" class="col-8 m-2 card" style="width:910px ;" id="logradouro">
+                            <small class="font-monospace h1cor" >Rua.</small> 
+
+                        <label class="mt-2 h1cor" for="bairro">Bairro</label>           
+                        <input type="text" class="col-8 m-2 card" style="width:910px ;" id="bairro" >
+                            <small class="font-monospace h1cor" >Bairro</small>    
+
+                        <label class="mt-2 h1cor" for="localidade">Localidade</label>           
+                        <input type="text" class="col-8 m-2 card" style="width:910px ;" id="localidade" >
+                            <small class="font-monospace h1cor" >Cidade</small> 
+
+                        <label class="mt-2 h1cor" for="uf">UF</label>           
+                        <input type="text" class="col-8 m-2 card" style="width:910px ;" id="uf" >
+                            <small class="font-monospace h1cor" >Estado</small>
+
+                            <br>     
+                </div>   
+        </div>
+    </div>
+    
+</body>
+    <script src="main.js" ></script>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="carrinho.js"></script>
+    <script src="javascript.js"></script>
+    <link rel="stylesheet" href="Stely1.css">
+    <title>CARRINHO</title>
+</head>
+
+<body onload="carrinho()">
+    <div class="container-fluid">
+        <div class="row justify-content-end">
+            <header>
+                <div class="col-8 offset-2 mt-5 text-end">
+                    <!-- <p id="p" style="color: rgb(255, 255, 255);">Bem-vindo, </p> -->
+                    <div class="col-5 offset-3">
+                        <h1 style=" text-align: center;">
+                            <a href="pagina2.html" class="h1cor2">Pedrinho Locações</a>
+                        </h1>
+                    </div>
+                    <nav style="width: 200px; height: 35px; margin-top: 40px; margin-left: 648px;">
+
+                        <div class="col-8 offset-2">
+                            <!-- <a href="carrinho.html"><button class="botoesheader">CARRINHO</button></a> -->
+                            <a href="cadastro.html">
+                                <button type="button" class="btn btn-dark" style="width: 120px;">CEP</button>
+                               </a>
+
+                        </div>
+
+                </div>
+                </nav>
+            </header>
+
+        <!-- <button type="button" onclick="">
+                    <a href="cadastro.html">Cadastro</a>
+                </button> -->
+
+    <!-- <input type="text" id="totalGeral" disabled> -->
+    <!-- <p>Valor dos filmes: <span id="totalGeral"></span></p> -->
+    <!-- <p id="total" > valor a p agar </p> -->
+    <div class="container-fluid">
+        <div class="row  justify-content-center mt-4">
+            
+            <div class="col-6 mt-3 bg-dark card">
+                <h1 class="h1cor" style="text-align: center;">CARRINHO DE COMPRA</h1>
+                <p class="h1cor">Valor dos filmes: <span id="totalGeral"></span></p>
+                <div class="row">
+                    <div class="col-5">
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="flexRadioFault" id="rb1" checked onclick="if(document.getElementById('vista').disabled == true)
+                            {
+                             document.getElementById('parcela').disabled = true;
+                             document.getElementById('cartao').disabled = true;
+                             document.getElementById('cartao').value = '';
+                             compra()   
+                            }
+                            else{
+                                document.getElementById('parcela').disabled = true;
+                                document.getElementById('cartao').disabled = true;
+                            }">
+
+                            <label class="form-check-label h1cor" for="vista">
+                                Á vista
+                            </label>
+                            <input type="text" class="form-control" name="vista" id="vista" disabled
+                                style="min-width: 150px;">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-5 mt-4">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" name="flexRadioFault" onclick="if(document.getElementById('parcela').disabled == true)
+                                    {
+                                        document.getElementById('parcela').disabled = false;
+                                        document.getElementById('vista').disabled = true;
+                                        // document.getElementById('vista').value = '';
+                                    
+                                    }
+                                    else{
+                                        document.getElementById('vista').disabled = true;
+                                    }">
+
+                                    <label for="flexRadioFault" class="form-check-label h1cor">
+                                        Cartão
+                                    </label>
+
+                                    <select class="form-check" aria-label="Default select example" disabled id="parcela"
+                                        style="min-width: 150px;">
+                                        <option value="1" selected>Parcela</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                    <input type="text" class="form-control mt-1" name="cartao" id="cartao" disabled
+                                        style="min-width: 150px;" x>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <form action="https://api.staticforms.xyz/submit" method="post">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="text" name="email" placeholder="Your Email" />
+        <textarea name="message"></textarea>
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="0f84b149-9258-4508-a8fe-338358f469e6">
+        <input type="hidden" name="subject" value="Contact us from - example.com" />
+        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
+        <input type="submit" value="Submit" />
+    </form> -->
+
+
+</body>
+
+</html>
